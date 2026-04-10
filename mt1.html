@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        background-color: antiquewhite;
+    }    
+    #h1{
+        text-align: center;
+        border: solid 3px;
+        background-color: chocolate;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #total , #percentage , #result{
+        border: solid 3px;
+        padding: 5px;
+        background-color: aqua;
+
+    }
+    #cal {
+      border: solid 3px;
+      padding: 5px;
+      background-color: greenyellow;
+
+    }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Result calculator</h1><br>
+    <button id="cal" onclick="calculate()">CALCULATE</button><br>
+    <div class="container">
+    <div id="total">TOTAL</div><br>
+    <div id="percentage">PERCENTAGE</div><br>
+    <div id="result">DIVISION</div><br>
+    </div>
+    <script src="./mt1.js"></script>
+</body>
+</html>
