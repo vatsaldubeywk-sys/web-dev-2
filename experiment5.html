@@ -2,55 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Salary Management System</title>
-     <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-        <div class="container">
-            
-        <h2>Employee Salary Management System</h2>
-        <table width="50%" border="0" align="center" cellpadding="5" cellspacing="2">
-            <tr>
-                <td><label for="">Employee Name</label></td>
-                <td>: </td>
-                <td> <input type="text" id="name" placeholder="Employee Name"></td>
-            </tr>
 
-             <tr>
-                <td><label for="">Employee Id</label></td>
-                <td>: </td>
-                <td> <input type="text" id="empId" placeholder="Employee Id"></td>
-            </tr>
+<h2>Employee Salary Management System</h2>
 
-             <tr>
-                <td><label for="">Employee Salary</label></td>
-                <td>: </td>
-                <td> <input type="number" id="salary" placeholder="Employee Salary"></td>
-            </tr>
+<table>
+    <tr>
+        <td>Employee Name :</td>
+        <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+        <td>Employee ID :</td>
+        <td><input type="text" id="empId"></td>
+    </tr>
+    <tr>
+        <td>Employee Salary :</td>
+        <td><input type="number" id="salary"></td>
+    </tr>
+    <tr>
+        <td>Employee Department :</td>
+        <td><input type="text" id="dept"></td>
+    </tr>
+</table>
 
-             <tr>
-                <td><label for="">Employee Department</label></td>
-                <td>: </td>
-                <td> <input type="text" id="dept" placeholder="Employee Department"></td>
-            </tr>
+<br>
+<button onclick="addEmployee()">Add Employee</button>
+<button onclick="displayEmployees()">Display All</button>
+<button onclick="filterSalary()">Salary > 50000</button>
+<button onclick="totalSalary()">Total Salary</button>
+<button onclick="averageSalary()">Average Salary</button>
+<button onclick="countDepartment()">Count by Department</button>
 
-            <tr>
-                <td><button onclick="addEmployee()">Add Employee</button></td>
-                <td><button onclick="displayEmployees()">Display All</button></td>
-                <td><button onclick="filterSalary()">Salary > 50000</button></td>
-            </tr>
+<div id="output"></div>
 
-            <tr>
-                <td><button onclick="totalSalary()">Total Salary</button></td>
-                <td><button onclick="averageSalary()">Average Salary</button></td>
-                <td><button onclick="countDepartment()">Count by Department</button></td>
-            </tr>
-        </table>
-       
-        <div id="output"></div>
-    </div>
-    <script src="experiment5.js"></script>
-    
+<script src="experiment5.js"></script>
 </body>
 </html>
