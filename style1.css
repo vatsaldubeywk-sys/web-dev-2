@@ -31,3 +31,9 @@ button:hover {
     margin-top: 20px;
     text-align: left;
 }
+
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
